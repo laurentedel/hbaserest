@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<metainfo>
+    <schemaVersion>2.0</schemaVersion>
+    <services>
+        <service>
+            <name>HBASEREST</name>
+            <displayName>HbaseRest</displayName>
+            <comment>HBase REST Gateway</comment>
+            <version>1.0.0</version>
+            <components>
+                <component>
+                  <name>HBASEREST_CLIENT</name>
+                  <displayName>HBaseRest</displayName>
+                  <category>SLAVE</category>
+                  <cardinality>1+</cardinality>
+                  <commandScript>
+                    <script>scripts/client.py</script>
+                    <scriptType>PYTHON</scriptType>
+                    <timeout>5000</timeout>
+                  </commandScript>
+                </component>
+            </components>
+        <requiredServices>
+          <service>HBASE</service>
+        </requiredServices>
+        </service>
+    </services>
+</metainfo>

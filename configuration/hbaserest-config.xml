@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+  <property>
+    <name>hbase.rest.port</name>
+    <value>8082</value>
+    <description>Port where REST gateway will be</description>
+  </property> 
+  <property>
+    <name>hbase.rest.path</name>
+    <value>/usr/hdp/current/hbase-client/bin/hbase-daemon.sh</value>
+    <description>Complete path of the shell script starting REST gateway</description>
+  </property>
+  <property>
+    <name>hbase.pid.dir</name>
+    <value>/var/run/hbase</value>
+    <description>Pid Directory for HBase</description>
+  </property>
+  <property>
+    <name>hbase.user</name>
+    <value>hbase</value>
+    <property-type>USER</property-type>
+    <description>HBase User Name</description>
+  </property>
+</configuration>
