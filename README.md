@@ -1,4 +1,4 @@
-An Ambari Stack service package for the HBase REST gateway.
+An Ambari 1.7+ Stack service package for the HBase REST gateway.
 
 To deploy, copy the entire directory into your Ambari stacks folder and restart Ambari:
 
