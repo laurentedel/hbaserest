@@ -12,15 +12,15 @@ class Client(Script):
 
   def stop(self, env):
     import params
-    Execute(params.script_path + ' stop rest --infoport ' + str(params.rest_port))
+    Execute(params.script_path + ' stop rest -p ' + str(params.rest_port))
 
   def start(self, env):
     import params
-    Execute(params.script_path + ' start rest --infoport ' + str(params.rest_port))
+    Execute(params.script_path + ' start rest -p ' + str(params.rest_port))
 
   def restart(self, env):
     import params
-    Execute(params.script_path + ' restart rest --infoport ' + str(params.rest_port))
+    Execute(params.script_path + ' restart rest -p ' + str(params.rest_port))
 
   def status(self, env):
     import params
