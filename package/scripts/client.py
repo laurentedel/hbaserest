@@ -24,7 +24,7 @@ class Client(Script):
 
   def status(self, env):
     import params
-    check_process_status(params.pid_dir + '/hbase-" + params.hbase_user + '-rest.pid')
+    check_process_status(params.pid_dir + '/hbase-' + params.hbase_user + '-rest.pid')
 
 if __name__ == "__main__":
   Client().execute()
