@@ -12,19 +12,19 @@ class Client(Script):
 
   def stop(self, env):
     import params
-    Execute(params.script_path + ' stop rest -p ' + str(params.rest_port))
+    Execute(params.script_path + ' stop rest --port ' + str(params.rest_port) + ' --infoport ' + str(params.info_port))
 
   def start(self, env):
     import params
-    Execute(params.script_path + ' start rest -p ' + str(params.rest_port))
+    Execute(params.script_path + ' start rest --port ' + str(params.rest_port) + ' --infoport ' + str(params.info_port))
 
   def restart(self, env):
     import params
-    Execute(params.script_path + ' restart rest -p ' + str(params.rest_port))
+    Execute(params.script_path + ' restart rest --port ' + str(params.rest_port) + ' --infoport ' + str(params.info_port))
 
   def status(self, env):
     import params
-    check_process_status(params.pid_dir + '/hbase-' + params.hbase_user + '-rest.pid')
+    check_process_status(params.pid_dir + '/hbase--rest.pid')
 
 if __name__ == "__main__":
   Client().execute()
