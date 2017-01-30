@@ -29,5 +29,5 @@ hbase.rest.kerberos.principal=hbase/_HOST@BDFG2PP2
 hbase.rest.keytab.file=/etc/security/keytabs/hbase.service.keytab
 hbase.rest.port=9091
 hbase.rest.support.proxyuser=true
-```     
-
+```
+Good luck !
